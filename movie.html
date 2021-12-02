@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/stlyes.css"> -->
+    <title>Movie details </title>
+    <!-- Import poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Import Monoton  font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/movie.css">
+   </head>
+
+    <body>
+       
+        <!-- Movie Detail Page -->
+        <h1>Welcome to Movie Details</h1>
+        <div class="container-details">
+            <div class= col-2>
+                <div class="col-left">
+                    <img id="Poster" src="${movie.Poster}">
+                </div>
+                <div class= "col-right">
+                      <div class="detail"><strong>Title:</strong><p id="Title">${movie.Title}</p></div>
+                      <div class="detail"><strong>Genre:</strong><p id="Genre">${movie.Genre}</p></div> 
+                      <div class="detail"><strong>Released:</strong><p id="Released">${movie.Released}</p></div> 
+                      <div class="detail"><strong>Rated:</strong><p id="Rated">${movie.Rated}</p></div> 
+                      <div class="detail"><strong>IMDB Rating:</strong><p id="imdbRating">${movie.imdbRating}</p></div> 
+                      <div class="detail"><strong>Director:</strong><p id="Director">${movie.Director}</p></div> 
+                      <div class="detail"><strong>Writer:</strong><p id="Writer">${movie.Writer}</p></div> 
+                      <div class="detail"><strong>Actors:</strong><p id="Actors">${movie.Actors}</p></div> 
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="plot" >
+                    <h3>Plot</h3>
+                    <p id="Plot">Plot: ${movie.Plot}</p>
+                    <hr>
+                    <div class="btn">
+                        <a href="http://imdb.com/title/{movie.imdbID}" target="_bank" class="btn-primary">View IMDB</a>
+                        <a href="" id="btn-bookmark" class="btn-bookmark">Bookmark Movie</a>
+                        <a href="index.html" class="btn-default">Go Back To Search</a>
+                        <a href="favourite.html" class="btn-default">Bookmark page</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Initialize swiper  -->
+    <!-- <script src="./js/swiper.js"></script> -->
+    <!-- jQuery -->
+
+
+    <!-- movies.js -->
+    <script src="./js/movie.js"></script>
+
+    <script>
+        // getMovie();
+    </script>
+    
+    </body>
+    
+    </html>
