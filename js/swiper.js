@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
         showResults.innerHTML = '';
         results.forEach(result => {
           console.log(result)
-          let template = `<div><img src="${result.Poster}" /><h5>${result.Title}</h5>
+          let template = `<div><img src="${result.Poster}"/>
           <button><a href="movie.html?movieId=${result.imdbID}" target="_blank">Movie Details</a></button>
           </div>`
           console.log(template);
