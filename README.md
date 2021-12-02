@@ -20,11 +20,11 @@ NOTE:
 # Run locally
 Clone repo
 
-``````
+```https://github.com/mua-wallace/Movie-siteTask2.git```
 
-```cd Internship_Task ```
+```cd Movie-siteTask2```
 
-Open with Internship_Task folder with any code editor of your choice 
+Open with Movie-siteTask2 folder with any code editor of your choice 
 ``` vs-code, sublime, atom etc ```
 Your can now reveal the web pages by opening  ```index.html``` with a  browser of your choice ``` chrome, FireFox ```
 ### Bravooooooo!!!
