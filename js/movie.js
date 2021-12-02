@@ -29,6 +29,14 @@ if (!movieId) {
             document.getElementById('Actors').innerText = res.data.Actors;
             document.getElementById('Director').innerText = res.data.Director;
             document.getElementById('Plot').innerText = res.data.Plot;
+            document.getElementById('Awards').innerText = res.data.Awards;
+            document.getElementById('Country').innerText = res.data.Country;
+            document.getElementById('Language').innerText = res.data.Language;
+            document.getElementById('imdbVotes').innerText = res.data.imdbVotes;
+            document.getElementById('Runtime').innerText = res.data.Runtime;
+            document.getElementById('Type').innerText = res.data.Type;
+            document.getElementById('DVD').innerText = res.data.DVD;
+            document.getElementById('Production').innerText = res.data.Production;
         })
         .catch((err) => {
             console.log(err);

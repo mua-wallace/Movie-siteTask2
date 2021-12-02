@@ -34,7 +34,8 @@ a {
     margin: 2px auto;
     padding: 1rem;
     clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0% 100%);
-    background-color: rgba(255, 255, 255, 0.884);
+    background-color: rgba(218, 213, 213, 0.884);
+    
     
 }
 .container-details .col-2 {
@@ -54,7 +55,7 @@ a {
 
 }
 .container-details .col-2 .col-left  img {
-    width: 75%;
+    width: 100%;
     max-height: 100%;
     object-fit: cover; 
     margin-bottom: 0; 
