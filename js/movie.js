@@ -35,14 +35,16 @@ if (!movieId) {
         });
 }
 
-
+// Bookmark section
 let bookmarkBtn = document.getElementById('btn-bookmark');
 if (localStorage.getItem('bookmark')) {
     let bookMarks = JSON.parse(localStorage.getItem('bookmark'));
+    console.log(bookMarks)
 } else {
     let bookMarks = [];
+    console.log(bookMarks)
 }
-console.log(bookMarks)
+
 
 const addBookmark = (id) => {
     if (bookMarks.indexOf(id) > -1) {
