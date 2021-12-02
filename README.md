@@ -15,3 +15,20 @@ NOTE:
     - dans ce projet l'utilisation du sass est obligatoire
     - api video : omdbapi (http://www.omdbapi.com/)
     - l'utilisation de git est obligatoire (edited) 
+
+
+# Run locally
+Clone repo
+
+``````
+
+```cd Internship_Task ```
+
+Open with Internship_Task folder with any code editor of your choice 
+``` vs-code, sublime, atom etc ```
+Your can now reveal the web pages by opening  ```index.html``` with a  browser of your choice ``` chrome, FireFox ```
+### Bravooooooo!!!
+
+# Contributors
+![](https://avatars.githubusercontent.com/u/60385803?s=60&v=4)   
+Made with [Contributor](https://github.com/mua-wallace)
