@@ -42,35 +42,35 @@ if (!movieId) {
             console.log(err);
         });
 }
-
-
-let bookMarks = [];
-// Bookmark section
 let bookmarkBtn = document.getElementById('btn-bookmark');
-if (localStorage.getItem('bookmark')) {
-    let bookMarks = JSON.parse(localStorage.getItem('bookmark'));
-    console.log(bookMarks)
-} else {
-   
-    console.log(bookMarks)
-}
-
 
 const addBookmark = (id) => {
+    let bookMarks = [];
+    if (localStorage.getItem('bookmark')) {
+        bookMarks = JSON.parse(localStorage.getItem('bookmark'));
+        console.log(bookMarks)
+    } else {
+        bookMarks = localStorage.setItem('bookmark', JSON.stringify([]));
+        console.log(bookMarks)
+    }
     if (bookMarks.indexOf(id) > -1) {
         alert('this movie has alredy been bookmarked');
     } else {
-        let bookMarks = JSON.parse(localStorage.getItem('bookmark'));
+        console.log(id)
+        console.log(bookMarks)
         bookMarks.push(id);//add movie id to the bookmarks array
-        // console.log(bookMarks);
+        console.log(bookMarks);
         localStorage.setItem('bookmark', JSON.stringify(bookMarks));
     }
 }
 
+
+
+console.log(bookmarkBtn);
 bookmarkBtn.addEventListener('click', (e) => {
     e.preventDefault();
     let params = (new URL(document.location)).searchParams;
     let movieId = params.get('movieId');
-    //   console.log(movieId);
+      console.log(movieId);
     addBookmark(movieId);
 })

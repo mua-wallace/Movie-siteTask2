@@ -378,7 +378,7 @@ a {
 .movies-searchable button {
     width: 100%;
     height: 30px;
-    background-color: rgba(34, 34, 199, 0.753);
+    background-color: rgba(170, 7, 129, 0.753);
     border-radius: 10px;
     border: none;
     color: #fff;
@@ -463,7 +463,7 @@ footer .logo {
     align-items: center;
 }
 /* ==-Making-Home page-responsive */
-@media(max-width:1200px) {
+@media(max-width:1300px) {
     #main-slider,
     #latest,
     .slider-btns {
@@ -485,7 +485,7 @@ footer .logo {
 @media(max-width:824px){
     .navigation {
         padding: 20px 10px;
-        width: 90%;
+        width:90%;
     }
     .logo,
     footer .logo {
@@ -505,11 +505,12 @@ footer .logo {
         grid-template-columns: 60px 1fr;
         grid-template-rows: repeat(2, 1fr);
         padding: 20px 0px;
+        align-content: center;
     }
     .logo {
         margin: 0px;
     }
-    #search {
+    #search-form {
         grid-column-start: 1;
         grid-column-end: 3;
         width: 100%;
