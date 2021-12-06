@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
 
         console.log('err' + err);
         removePreload();
-        alert('error');
+        alert('checkout your Internet connections');
 
         // if (err.response) { 
 
