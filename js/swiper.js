@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   console.log('searching..');
   addPreload();
-  axios.get('http://www.omdbapi.com?apikey='+API_KEY+'&s='+inputElement.value)
+  axios.get('https://www.omdbapi.com?apikey='+API_KEY+'&s='+inputElement.value)
   
       .then(response => {
         console.log(response.data.Search)
