@@ -10,7 +10,9 @@ const movieSearchable = document.querySelector('.movies-searchable');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   console.log('searching..');
+  addPreload();
   axios.get('http://www.omdbapi.com?apikey='+API_KEY+'&s='+inputElement.value)
+  
       .then(response => {
         console.log(response.data.Search)
         let results = response.data.Search;
@@ -24,11 +26,20 @@ form.addEventListener('submit', (e) => {
           console.log(template);
           showResults.insertAdjacentHTML('beforeend', template);
         })
+        removePreload();
       })
       .catch(error => {
         console.log(error)
       });
 });
+
+// begin pre-loader
+
+// var loader = document.getElementById('preloader');
+// window.addEventListener('load', () => {
+//   loader.style.display = "none";
+// })
+
 
 
 
@@ -76,6 +87,11 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-  
+ function addPreload() {
+   $('.preload').attr('id','preloader');
+ } 
+ function removePreload() {
+   $('.preload').removeAttr('id');
+ } 
   
  
