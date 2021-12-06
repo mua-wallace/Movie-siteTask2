@@ -415,6 +415,23 @@ a {
 }
 
 
+/* bookmarked movies */
+
+.bookmarked {
+    background-color: #ddd;
+    width: 70vw;
+    padding: 1rem;
+    margin: 1rem auto;
+    align-items: center;
+}
+
+.bookmarked img {
+    width: 20%;
+}
+
+
+
+
 
 
 
