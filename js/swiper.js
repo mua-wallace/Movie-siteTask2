@@ -14,22 +14,38 @@ form.addEventListener('submit', (e) => {
   axios.get('https://www.omdbapi.com?apikey='+API_KEY+'&s='+inputElement.value)
   
       .then(response => {
-        console.log(response.data.Search)
+        // console.log(response.data.Search)
         let results = response.data.Search;
         let showResults = document.querySelector('.movies-searchable')
         showResults.innerHTML = '';
-        results.forEach(result => {
-          console.log(result)
-          let template = `<div><img src="${result.Poster}"/>
-          <button><a href="movie.html?movieId=${result.imdbID}" target="_blank">Movie Details</a></button>
-          </div>`
-          console.log(template);
-          showResults.insertAdjacentHTML('beforeend', template);
-        })
+        if(!results) {
+          alert('Your request was not found, please checkout your spellings');
+        } else {
+          results.forEach(result => {
+            let template = `<div><img src="${result.Poster}"/>
+            <button><a href="movie.html?movieId=${result.imdbID}" target="_blank">Movie Details</a></button>
+            </div>`
+            // console.log(template);
+            showResults.insertAdjacentHTML('beforeend', template);
+          })
+        }
+        
         removePreload();
+
       })
-      .catch(error => {
-        console.log(error)
+      .catch(err => {
+
+        console.log('err' + err);
+        removePreload();
+        alert('error');
+
+        // if (err.response) { 
+
+        // } else if (err.request) { 
+        //   alert('check out your Internet connection');
+        // } else { 
+        //   alert('its neither an internet connection problem nor PAGE NOT FOUND');
+        // }
       });
 });
 
