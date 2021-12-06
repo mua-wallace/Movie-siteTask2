@@ -27,6 +27,7 @@ Clone repo
 Open with Movie-siteTask2 folder with any code editor of your choice 
 ``` vs-code, sublime, atom etc ```
 Your can now reveal the web pages by opening  ```index.html``` with a  browser of your choice ``` chrome, FireFox ```
+Search a movie and select any movie to get the movie details , you can bookmark(that is select as favourite).Note the book marked movies are stored in the ```localStorage``` of your computer
 ### Bravooooooo!!!
 
 # Contributors
