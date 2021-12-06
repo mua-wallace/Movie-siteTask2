@@ -15,7 +15,7 @@ if (!movieId) {
     window.location = "index.html"
 
 } else {
-    axios.get('http://www.omdbapi.com?apikey=' + API_KEY + '&i=' + movieId)
+    axios.get('https://www.omdbapi.com?apikey=' + API_KEY + '&i=' + movieId)
         .then((res) => {
             console.log(res);
             document.getElementById('Poster').setAttribute('src', res.data.Poster);
