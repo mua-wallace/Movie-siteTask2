@@ -40,6 +40,14 @@ form.addEventListener('submit', (e) => {
 //   loader.style.display = "none";
 // })
 
+function addPreload() {
+  $('.preload').attr('id','preloader');
+} 
+function removePreload() {
+  $('.preload').removeAttr('id');
+} 
+ 
+
 
 
 
@@ -87,11 +95,5 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
- function addPreload() {
-   $('.preload').attr('id','preloader');
- } 
- function removePreload() {
-   $('.preload').removeAttr('id');
- } 
-  
+
  
