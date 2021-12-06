@@ -48,11 +48,14 @@ const addBookmark = (id) => {
     let bookMarks = [];
     if (localStorage.getItem('bookmark')) {
         bookMarks = JSON.parse(localStorage.getItem('bookmark'));
-        console.log(bookMarks)
+        // console.log(bookMarks)
     } else {
         bookMarks = localStorage.setItem('bookmark', JSON.stringify([]));
-        console.log(bookMarks)
+        // console.log(bookMarks)
     }
+
+
+
     if (bookMarks.indexOf(id) > -1) {
         alert('this movie has alredy been bookmarked');
     } else {
@@ -61,6 +64,7 @@ const addBookmark = (id) => {
         bookMarks.push(id);//add movie id to the bookmarks array
         console.log(bookMarks);
         localStorage.setItem('bookmark', JSON.stringify(bookMarks));
+        alert("You just bookmarked this movie")
     }
 }
 
