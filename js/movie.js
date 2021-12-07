@@ -1,6 +1,11 @@
+//page complete
+
+// window.addEventListener('load', removePreload);
+
 // API_KEY
 const API_KEY = '7a0adb83';
 // get the movieID of the clicked movie
+
 function getMovieId() {
     let params = (new URL(document.location)).searchParams;
     return params.get('movieId');
@@ -13,7 +18,6 @@ let movieId = getMovieId();
 if (!movieId) {
     // can't get detail from empty movieId
     window.location = "index.html"
-
 } else {
     axios.get('https://www.omdbapi.com?apikey=' + API_KEY + '&i=' + movieId)
         .then((res) => {
@@ -37,7 +41,10 @@ if (!movieId) {
             document.getElementById('Type').innerText = res.data.Type;
             document.getElementById('DVD').innerText = res.data.DVD;
             document.getElementById('Production').innerText = res.data.Production;
+
+            removePreload();
         })
+
         .catch((err) => {
             console.log(err);
         });

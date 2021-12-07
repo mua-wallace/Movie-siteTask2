@@ -29,41 +29,20 @@ form.addEventListener('submit', (e) => {
             showResults.insertAdjacentHTML('beforeend', template);
           })
         }
-        
         removePreload();
-
       })
       .catch(err => {
-
         console.log('err' + err);
-        removePreload();
         alert('checkout your Internet connections');
-
-        // if (err.response) { 
-
-        // } else if (err.request) { 
-        //   alert('check out your Internet connection');
-        // } else { 
-        //   alert('its neither an internet connection problem nor PAGE NOT FOUND');
-        // }
+        removePreload();
       });
 });
 
 
 
-// begin pre-loader
 
-// var loader = document.getElementById('preloader');
-// window.addEventListener('load', () => {
-//   loader.style.display = "none";
-// })
 
-function addPreload() {
-  $('.preload').attr('id','preloader');
-} 
-function removePreload() {
-  $('.preload').removeAttr('id');
-} 
+
  
 
 
