@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="/css/stlyes.css"> -->
     <title>Movie details</title>
     <!-- Import poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +26,9 @@
       integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
       crossorigin="anonymous"
     />
+    <!-- <link rel="stylesheet" href="/css/stlyes.css"> -->
     <link rel="stylesheet" href="./css/movie.css"/>
+    <link rel="stylesheet" href="./utilities/preLoader.css">
   </head>
 
 
@@ -37,7 +38,7 @@
   
 
   <body>
-    <div id="preloader"></div>
+    <div class="preload" id="preloader"></div>
     <!-- Movie Detail Page -->
     <div class="container-details">
       <h4 class="container-details-h"> Details </h4>
@@ -125,22 +126,19 @@
       </div>
     </div>
 
+    <!-- jQuery link -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- axios link -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- swiperJs link -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- Initialize swiper  -->
-    <!-- <script src="./js/swiper.js"></script> -->
-    <!-- jQuery -->
 
-    <!-- movies.js -->
+    <!-- movie.js -->
+    <script src="./utilities/preLoader.js"></script>
     <script src="./js/movie.js"></script>
-
-    <script>
-      // getMovie();
-    </script>
   </body>
 </html>
