@@ -7,16 +7,6 @@
     font-size: poppins;
 }
 
-/* preloader */
-#preloader {
-    background: #000 url(/images/loading.gif) no-repeat center center;
-    background-size: 15%;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    position: fixed;
-    z-index: 11000;
-}
 
 
 body {
@@ -25,19 +15,8 @@ body {
     font-size: poppins;
     background-color: #080808;
     width: 100vw;
-    /* height: 100vh; */
     overflow-x: hidden;
-
 }
-/* preloader  */
-/* #preloader {
-    background: #000 url(/Movie-siteTask2/images/loader.gif) no-repeat center center;
-    background-size: 15%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 11000;
-} */
 ul {
     list-style: none;
 }
@@ -582,7 +561,7 @@ footer .logo {
 }
 
 /* ============movie-page================ */
-.movie-banner {
+/* .movie-banner {
     width: 100%;
     max-width: 1300px;
     margin: 10px auto;
@@ -660,7 +639,7 @@ footer .logo {
     letter-spacing: 1px;
 }
 /* more-about-movie-------------- */
-.more-about-movie {
+/* .more-about-movie {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -718,13 +697,13 @@ footer .logo {
     color: #ffffff;
     letter-spacing: 1px;
     transition: all ease 0.3s;
-}
-.watch-btn:hover{
+} */
+/* .watch-btn:hover{
    background-color: var(--red); 
    transition: all ease 0.3s;
-}
+} */
 /* play-btn  */
-.play-btn {
+/* .play-btn {
     width: 65px;
     height: 65px;
     display: flex;
@@ -773,10 +752,10 @@ footer .logo {
     height: 180%;  
     border: #ffffff26;
     background-color: #ffffff18;
-    z-index: -1;
-}
+    z-index: -1;  */
+/* } */
 /* =====full-movie-video-====== */
-#play {
+/* #play {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -786,10 +765,10 @@ footer .logo {
     width: 100%;
     height: 100%;
     background-color: rgba(15, 15, 15, 0.7);
-    z-index: 108;
+    z-index: 108; */
     /* display: none; */
   
-}
+/* }
 .play-movie {
     width: 90%;
 }
@@ -816,4 +795,4 @@ footer .logo {
 .active-popup {
     display: flex !important;
     
-} 
+}  */
